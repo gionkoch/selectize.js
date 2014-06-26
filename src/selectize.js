@@ -283,6 +283,7 @@ $.extend(Selectize.prototype, {
 			'change'         : 'onChange',
 			'item_add'       : 'onItemAdd',
 			'item_remove'    : 'onItemRemove',
+            'option_selected' : 'onOptionSelected',
 			'clear'          : 'onClear',
 			'option_add'     : 'onOptionAdd',
 			'option_remove'  : 'onOptionRemove',
@@ -603,6 +604,7 @@ $.extend(Selectize.prototype, {
 				}
 			}
 		}
+        self.trigger('option_selected', value, $target);
 	},
 
 	/**
