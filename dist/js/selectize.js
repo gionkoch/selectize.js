@@ -746,6 +746,7 @@
 				'change'         : 'onChange',
 				'item_add'       : 'onItemAdd',
 				'item_remove'    : 'onItemRemove',
+	            'option_selected' : 'onOptionSelected',
 				'clear'          : 'onClear',
 				'option_add'     : 'onOptionAdd',
 				'option_remove'  : 'onOptionRemove',
@@ -1066,6 +1067,7 @@
 					}
 				}
 			}
+	        self.trigger('option_selected', value, $target);
 		},
 	
 		/**
